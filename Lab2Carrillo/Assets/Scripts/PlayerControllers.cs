@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerControllers : MonoBehaviour
 {
-    public float moveSpeed = 10f;
+    public float moveSpeed = 10.0f;
 
 
     // Start is called before the first frame update
@@ -22,4 +22,5 @@ public class PlayerControllers : MonoBehaviour
         if (Input.GetKey(KeyCode.DownArrow))
             transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);
     }
+
 }
