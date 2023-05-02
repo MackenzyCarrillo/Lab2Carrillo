@@ -40,20 +40,16 @@ public class PlayerController : MonoBehaviour
     void ConstrainPlayerPosition()
     {
 
-
         if (transform.position.z < zBound)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, -zBound);
         }
-
 
         if (transform.position.z > zBound)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, zBound);
 
         }
-
-
 
     }
 }
